@@ -1,1 +1,20 @@
 c14180116-Paul
+<!DOCTYPE html>
+<html>
+<body>
+  <br>
+  <input type="date" id="date"><br>
+  <input type="submit" onclick="count()"><br>
+</body>
+<script type= "text/javascript">
+    function count() {
+      var tgl = document.getElementById("birthday").value;
+      date = new Date(tgl.toString());
+      if(date.getTime() > today.getTime()){
+        var diftime = date.getTime() - today.getTime();
+        var difday = diftime / (1000360024);
+      }
+      document.getElementById("demo").innerHTML = difday + " Day";
+    }
+    </script>
+</html>
